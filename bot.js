@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'HELLO') {
-    	message.reply('HELLO FRIEND!');
+    if (message.content === 'hi') {
+    	message.reply('hey!');
   	}
     
     });
