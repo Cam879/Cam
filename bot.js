@@ -12,6 +12,8 @@ bot.on('guildMemberAdd, member => {
  
        channel.send(`Welcome to your server, ${member}, please read the rules in the rules channel!`)
 
+});
+
 client.on('message', message => {
     if (message.content === 'HELLO') {
     	message.reply('HELLO FRIEND');
