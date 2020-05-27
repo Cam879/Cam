@@ -13,8 +13,8 @@ client.on('message', message => {
 });
 
     client.on('message', message => {
-    if (message.content === 'hi') {
-    	message.reply('hello');
+    if (message.content === 'pong') {
+    	message.reply('ping');
   	}
 });
 
