@@ -11,15 +11,7 @@ client.on('message', message => {
   	}
 });
 
-bot.on('ready', () => {
-    bot.user.setStatus('available')
-    bot.user.setPresence({
-        game: {
-            name: 'you sleep',
-            type: "WATCHING",
-        }
-    });
-});
+client.user.setActivity("Game"); 
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
