@@ -12,6 +12,10 @@ client.on('message', message => {
   	}
     
     });
+
+client.on('message', message => {
+    if (message.content === 'bye') {
+    	message.reply('bye, hope to see you again soon!');
     
 client.on('message', message => {
     if (message.content === 'ping') {
