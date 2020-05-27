@@ -2,16 +2,16 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    console.log('This bot is online!');
+    console.log('I am ready!');
 
-}); 
+});
 
-    client.on('message', message => {
+client.on('message', message => {
     if (message.content === 'hi') {
     	message.reply('hey!');
-        
+
 });
-    
+        
 client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
