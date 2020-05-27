@@ -1,6 +1,3 @@
-await client.user.setPresence({ game: { name: 'Minecraft' }, status: 'idle' });
-});
-
 const Discord = require('discord.js');
 const client = new Discord.Client();
 Client.on('ready', async () => {
