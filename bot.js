@@ -3,7 +3,6 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('This bot is online!');
-    bot.user.setActivity('pacman world 2', { type: 'WATCHING'}).catch(console.error);
 });
 
 client.on('message', message => {
