@@ -11,5 +11,7 @@ client.on('message', message => {
   	}
 });
 
+client.user.setStatus('dnd', 'Made by KwinkyWolf') 
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
