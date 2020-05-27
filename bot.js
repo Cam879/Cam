@@ -6,6 +6,13 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    if (message.content === 'HELLO') {
+    	message.reply('HELLO FRIEND');
+  	}
+    
+ });
+
+client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
   	}
