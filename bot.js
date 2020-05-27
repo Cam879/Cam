@@ -11,7 +11,16 @@ client.on('message', message => {
   	}
 });
 
-client.user.setStatus('dnd', 'Made by KwinkyWolf') 
+bot.on('ready', () => {
+    bot.user.setStatus('available')
+    bot.user.setPresence({
+        game: {
+            name: 'with depression',
+            type: "STREAMING",
+            url: "https://www.twitch.tv/monstercat"
+        }
+    });
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
