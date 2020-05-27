@@ -3,6 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
+    bot.user.setActivity('minecraft', { type: 'PLAYING'}).catch(console.error);
 });
 
 client.on('message', message => {
