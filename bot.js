@@ -2,8 +2,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    console.log('I am ready!');
-    bot.user.setActivity('minecraft', { type: 'PLAYING'}).catch(console.error);
+    console.log('This bot is online!');
+    bot.user.setActivity('minecraft', { type: 'STREAMING'}).catch(console.error);
 });
 
 client.on('message', message => {
